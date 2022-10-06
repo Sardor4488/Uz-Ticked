@@ -4,7 +4,7 @@ import HomeWrapper from './homeWrapper'
 const Home = () => {
     return (
         <HomeWrapper>
-            <div>
+            <div className='home h100vh'>
                 
             </div>
         </HomeWrapper>
