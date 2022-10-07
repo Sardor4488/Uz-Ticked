@@ -5,7 +5,11 @@ const Home = () => {
     return (
         <HomeWrapper>
             <div className='home h100vh'>
-                
+                <div className="container">
+                    <div>
+                        
+                    </div>
+                </div>
             </div>
         </HomeWrapper>
     )
