@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
 header{
-    background-color: white ;
+    background-color: transparent ;
     position: fixed;
     z-index:3;
     width: 100%;
-}
+} 
 .logo{
     width: 60px;
 }
@@ -45,7 +45,7 @@ header{
     ul{
         li{
             background-color: #f1f1f1;
-            border-bottom: 1px solid rgb(76, 76, 76);
+            border-bottom: 1px solid rgb(188, 188, 188);
             padding: 10px;
         }
     }
@@ -62,7 +62,7 @@ header{
     transition: 0.4s;  
 }
  
-@media screen and (max-width: 631px){
+@media screen and (max-width: 648px){
 .d-none-md{
     display: none !important;
 }
@@ -75,6 +75,9 @@ header{
 .bar-icon{
     display: block !important;
     cursor: pointer;
+}
+.header{
+    background-color: #fff;
 }
 } 
 `
