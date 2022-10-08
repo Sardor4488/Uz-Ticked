@@ -20,9 +20,6 @@ header{
 .links{
     font-size: 13px !important;
 
-}
-.bar-icon{
-    color:#1784b3 !important ;
 } 
  .d-none-nav{
     transition: 0.5s;
@@ -61,7 +58,12 @@ header{
     background-color:   rgba(76, 76, 76, 0.565) !important;
     transition: 0.4s;  
 }
- 
+ .bar-icon{
+    display: none !important;
+    cursor: pointer !important;
+    margin: 0 5px;
+    width: 20px;
+ }
 @media screen and (max-width: 648px){
 .d-none-md{
     display: none !important;
@@ -74,7 +76,7 @@ header{
 }
 .bar-icon{
     display: block !important;
-    cursor: pointer;
+    
 }
 .header{
     background-color: #fff;

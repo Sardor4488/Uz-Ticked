@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="37px" viewBox="0 0 30 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>badge-lock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-basic" transform="translate(-131.000000, -572.000000)">
+            <g id="security" transform="translate(126.000000, 565.000000)">
+                <g id="badge-lock" transform="translate(0.000000, 5.000000)">
+                    <rect id="size" fill="#00C39F" opacity="0" x="0" y="0" width="40" height="40"></rect>
+                    <path d="M19.9997854,39 C19.9997854,39 12.4001362,32.5035093 8.74994636,24.4642857 C5.09975653,16.4250622 5,7.28571429 5,7.28571429 C5,7.28571429 8.74994636,7.28571429 12.4998927,5.96428571 C16.2498391,4.64285714 19.9997854,2 19.9997854,2 C19.9997854,2 23.7497318,4.64285714 27.4996782,5.96428571 C31.2496245,7.28571429 34.9995709,7.28571429 34.9995709,7.28571429 C34.9995709,7.28571429 35.1216093,15.9365782 31.2496245,24.4642857 C27.3776397,32.9919932 19.9997854,39 19.9997854,39 Z M24,17 L24,14 C24,11.790861 22.209139,10 20,10 C17.790861,10 16,11.790861 16,14 L16,17 L14,17 L14,25 L26,25 L26,17 L24,17 Z M22,17 L18,17 L18,14 C18,12.8954305 18.8954305,12 20,12 C21.1045695,12 22,12.8954305 22,14 L22,17 Z" id="Path-2" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
