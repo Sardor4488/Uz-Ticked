@@ -7,6 +7,5 @@ ul{
     list-style: none;
     padding: 0;
 }
-
 `
 export default IndexWrapper

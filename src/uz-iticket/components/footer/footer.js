@@ -6,8 +6,24 @@ const Footer = () => {
     return (
         <FooterWrapper>
             <footer>
-                <div className=''>
-
+                <div className='container'>
+                    <div className='roww'>
+                        <div className='coll'>
+                            hello
+                        </div>
+                        <div className='coll'>
+                            hello
+                        </div>
+                        <div className='coll'>
+                            hello
+                        </div>
+                        <div className='coll'>
+                            hello
+                        </div>
+                        <div className='coll'>
+                            hello
+                        </div>
+                    </div>
                 </div>
             </footer>
         </FooterWrapper>
