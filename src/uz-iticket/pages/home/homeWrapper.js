@@ -38,6 +38,21 @@ background-color:rgba(0, 0, 0, 0.603) !important;
 .mini-sections{
     display: flex;
 }
+.h1_text{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.container_sudjete{
+    padding: 0 32px;
+    padding-top: 45px;
+}
+.card_img{
+    width: 125px;
+    height: 220px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
 @media screen and (max-width: 993px){
     .home{ 
     .container{
