@@ -1,12 +1,17 @@
 import React from 'react'
+import { Container } from 'react-bootstrap';
 import FooterWrapper from './footerWrapper'
 
 const Footer = () => {
     return (
         <FooterWrapper>
-            <div>Footer</div>
+            <footer>
+                <div className=''>
+
+                </div>
+            </footer>
         </FooterWrapper>
     )
 }
 
-export default Footer
+export default Footer;
