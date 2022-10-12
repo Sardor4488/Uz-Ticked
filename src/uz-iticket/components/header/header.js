@@ -27,7 +27,7 @@ const Header = () => {
     //     return () => {
     //         window.removeEventListener("scroll", handleScroll);
     //     };
-    // }, []);  className={` ${scrollPosition > 100 ? "bg-white  " : ""}`}
+    //  }, []);  className={` ${scrollPosition > 100 ? "bg-white  " : ""}`}
 
     return (
         <HeaderWrapper>

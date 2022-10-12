@@ -7,6 +7,10 @@ ul{
     list-style: none;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    
+}
 
 .links {
     font-size: 13px !important;
