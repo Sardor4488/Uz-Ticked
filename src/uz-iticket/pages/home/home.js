@@ -96,31 +96,7 @@ const Home = () => {
                 <div className='container_sudjete'>
                     <h1 className='h1_text'>UzTicket syudjetlar</h1>
                     <div className='d-flex'>
-                    <Swiper
-        pagination={{
-          type: "fraction",
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        scrollbar={{ draggable: false }}
-        spaceBetween={10}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />        
-        </SwiperSlide>
-        <SwiperSlide>
-        <img className='card_img' src="https://cdn3.tu-tu.ru/wp-content/uploads/2022/09/kv3-story-widget-220x385-1.png" alt="" />
-        </SwiperSlide>
-      </Swiper>
+                    
                     </div>
                 </div>
             </section>
