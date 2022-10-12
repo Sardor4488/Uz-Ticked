@@ -7,5 +7,9 @@ ul{
     list-style: none;
     padding: 0;
 }
+
+.links {
+    font-size: 13px !important;
+}
 `
 export default IndexWrapper

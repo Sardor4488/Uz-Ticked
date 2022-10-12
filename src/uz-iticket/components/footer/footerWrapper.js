@@ -48,5 +48,11 @@ const FooterWrapper = styled.div`
         margin-top: 8px;
     }
 
+    @media screen and (max-width: 821px) {
+        li {
+            margin: 0px 0 !important;
+        }
+    }
+
 `
 export default FooterWrapper;
