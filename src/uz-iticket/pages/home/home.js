@@ -98,14 +98,9 @@ const Home = () => {
             <section id='sudjete' className='container_sudjete' >
                 <div>
                     <h1 className='h1_text'>UzTicket syudjetlar</h1>
-                    <div className='d-flex_1'>
-
-                    </div>
-                </div>
-                <div className='otzivi'>
-                    <h1 className='h1_text'>Онлайн билеты для вашего путешествия с Туту.ру!</h1>
-                    <p className='p_text'>Туту.ру — онлайн-сервис путешествий, работающий с 2003 года. Мы помогаем организовать комфортную поездку не выходя из дома. На Туту.ру можно купить билеты на поезд, электричку, самолет и автобус, забронировать гостиницу и приобрести тур. А еще мы объясняем правила перевозок, рассказываем о тарифах и других полезных вещах.
-                        Ежедневно Туту.ру посещают 1 млн человек. Вот за что любят наш сервис:</p>
+                    <div className='otzivi'>
+                        <h1 className='h1_text'>Онлайн билеты для вашего путешествия с Туту.ру!</h1>
+                       <p> Ежедневно Туту.ру посещают 1 млн человек. Вот за что любят наш сервис:</p>
                     <div className='row pt-5'>
                         <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
                             <img src={img1} alt="" />
@@ -237,8 +232,8 @@ const Home = () => {
                         </ul>
                     </div>
                 </div>
-                
-            </section>
+            </div>
+        </section>
         </HomeWrapper>
     )
 }
