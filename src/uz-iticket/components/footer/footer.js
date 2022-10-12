@@ -37,9 +37,9 @@ const Footer = () => {
                         </div>
                         <div className='col-12 col-sm-12 col-md-6 col-lg-3 d-flex'>
                             <ul>
-                                <li my-2><Link className='links link_footer' to={"#"}>UzTicket saytida reklama</Link></li>
-                                <li my-2><Link className='links link_footer' to={"#"}>Ish safari chiptalari</Link></li>
-                                <li my-2><Link className='links link_footer' to={"#"}>Kontaktlar</Link></li>
+                                <li className='my-2'><Link className='links link_footer' to={"#"}>UzTicket saytida reklama</Link></li>
+                                <li className='my-2'><Link className='links link_footer' to={"#"}>Ish safari chiptalari</Link></li>
+                                <li className='my-2'><Link className='links link_footer' to={"#"}>Kontaktlar</Link></li>
                             </ul>
                             <div className='d-grid footer_card ms-5'>
                                 <p>Qo'shilish:</p>
