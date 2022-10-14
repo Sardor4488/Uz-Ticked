@@ -43,9 +43,46 @@ background-color:rgba(0, 0, 0, 0.603) !important;
     font-weight: bold;
     color: black;
 }
+.d-flex_1{
+    width: 100%;
+    height: 200px;
+}
+.p_text{
+    font-size: 15px;
+    color: black;
+    font-family: Helvetica,arial,sans-serif;
+}
+.ul_list{
+    margin-top: 40px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.text_little{
+    font: 600 13px/1.54 Direct,Helvetica,Arial,sans-serif;
+}
+.links{
+    font: -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+.otzivi{
+    margin-top: 200px;
+}
+h6{
+    font-weight: bold;
+    font-family: Helvetica,arial,sans-serif;
+    padding-top: 15px;
+    color: black;
+}
 .container_sudjete{
     padding: 0 32px;
     padding-top: 45px;
+}
+.links_1{
+    color: #202124;
+    font: 600 13px/1.54 Direct,Helvetica,Arial,sans-serif;
+}
+.links_1:hover{
+    color: #E3969C;
 }
 .card_img{
     width: 125px;
@@ -53,6 +90,7 @@ background-color:rgba(0, 0, 0, 0.603) !important;
     border-radius: 15px;
     margin-left: 15px;
 }
+
 @media screen and (max-width: 993px){
     .home{ 
     .container{
