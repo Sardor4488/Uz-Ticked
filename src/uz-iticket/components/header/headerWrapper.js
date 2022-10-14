@@ -3,7 +3,7 @@ import styled from "styled-components";
 const HeaderWrapper = styled.div`
 header{
     background-color: transparent ;
-    position: fixed;
+    /* position: fixed; */
     z-index:3;
     width: 100%;
     transition: 0.3s;
@@ -11,7 +11,7 @@ header{
 } 
 
 .logo{
-    width: 60px;
+    width: 60px !important;
 }
 .select-language{ 
     font-size: 12px !important;
@@ -32,6 +32,7 @@ header{
     transform: translateX(0%);
     
  }
+
 .md-nav{
     position: fixed;
     z-index: 2 !important;
