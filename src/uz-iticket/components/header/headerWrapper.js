@@ -6,7 +6,10 @@ header{
     position: fixed;
     z-index:3;
     width: 100%;
+    transition: 0.3s;
+    transform-origin: top;
 } 
+
 .logo{
     width: 60px;
 }
@@ -18,8 +21,7 @@ header{
 .register-link{
 }
 .links{
-    font-size: 13px !important;
-
+    font-size: 13px !important; 
 } 
  .d-none-nav{
     transition: 0.5s;

@@ -5,36 +5,33 @@ import FooterWrapper from './footerWrapper'
 const Footer = () => {
     return (
         <FooterWrapper>
-
-            {/* Start on Footer */}
-
             <footer>
                 <div className='container'>
                     <Link to={"#"} className='link_one'>UzTicket</Link>
                     <div className='row mt-3'>
-                        <div className='col-12 col-sm-12 col-md-6 col-lg-3 d-grid'>
+                        <div className=' px-0 col-12 col-sm-12 col-md-6 col-lg-3 d-grid'>
                             <Link className='links link_footer' to={"#"}>Qayta aloqa</Link>
                             <Link className='links link_footer' to={"#"}>Ma'lumot</Link>
                             <Link className='links link_footer' to={"#"}>So'rov natijalari</Link>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-6 col-lg-3 d-grid'>
+                        <div className=' px-0 col-12 col-sm-12 col-md-6 col-lg-3 d-grid'>
                             <Link className='links footer_link' to={"#"}>Sheriklik dasturi</Link>
                             <Link className='links footer_link' to={"#"}>Sodiqlik dasturi</Link>
                             <Link className='links footer_link' to={"#"}>Sovg'a sertifikatlari</Link>
                             <Link className='links footer_link' to={"#"}>Huquqiy ma'lumotlar</Link>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-6 col-lg-3 d-grid'>
+                        <div className=' px-0 col-12 col-sm-12 col-md-6 col-lg-3 d-grid'>
                             <Link className='links link_footer' to={"#"}>Kompaniya haqida</Link>
                             <Link className='links link_footer' to={"#"}>Bizning bo'sh ish o'rinlarimiz</Link>
                             <Link className='links link_footer' to={"#"}>Mamlakat yo'riqnomasi</Link>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-6 col-lg-3 d-flex'>
-                            <div className='d-grid w40'>
+                        <div className=' px-0 col-12 col-sm-12 col-md-6 col-lg-3 d-flex'>
+                            <div className='d-grid w100'>
                                 <Link className='links link_footer' to={"#"}>UzTicket saytida reklama</Link>
                                 <Link className='links link_footer' to={"#"}>Ish safari chiptalari</Link>
                                 <Link className='links link_footer' to={"#"}>Kontaktlar</Link>
                             </div>
-                            <div className='d-grid w60 footer_card ms-5'>
+                            <div className='  d-grid footer_card '>
                                 <p>Qo'shilish:</p>
                                 <div>
                                     <img className='footer_img' src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIiB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcyBpZD0iZGVmczEyIi8+PGcgaWQ9Imc1NjA4Ij48cmVjdCBoZWlnaHQ9IjUxMiIgaWQ9InJlY3QyOTg3IiByeD0iNjQiIHJ5PSI2NCIgc3R5bGU9ImZpbGw6IzRjNzVhMztmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIgd2lkdGg9IjUxMiIgeD0iMCIgeT0iMCIvPjxwYXRoIGQ9Im0gMjUxLjcwOTU1LDM2OS4xNDQ1NSBoIDIzLjkwNzIyIGMgMCwwIDcuMjE5MjcsLTAuNzk3NjIgMTAuOTEwMDcsLTQuNzY5MDMgMy4zOTcwNSwtMy42NTAyMSAzLjI4ODQxLC0xMC41MDE2NyAzLjI4ODQxLC0xMC41MDE2NyAwLDAgLTAuNDcxNzUsLTMyLjA4MDU1IDE0LjQyMDU0LC0zNi44MDMwMiAxNC42Nzk2NCwtNC42NTQ0IDMzLjUyNjQ4LDMxLjAwMzUyIDUzLjUwMjk3LDQ0LjcxMzYgMTUuMTA3MTIsMTAuMzc1MSAyNi41ODc5NCw4LjEwNDAxIDI2LjU4Nzk0LDguMTA0MDEgbCA1My40MTgxNCwtMC43NDM4OSBjIDAsMCAyNy45MzcxOSwtMS43MjU0IDE0LjY5MDQ2LC0yMy42OTcxMSAtMS4wODQyMSwtMS43OTM0NiAtNy43MjA3NywtMTYuMjQ5ODMgLTM5LjcxNjUxLC00NS45NDk0MyAtMzMuNTAyNjcsLTMxLjA5NDI2IC0yOS4wMTE4NywtMjYuMDYxMzQgMTEuMzM3NTUsLTc5LjgzNzc3IDI0LjU2OTg3LC0zMi43NTA0MiAzNC4zOTY4OSwtNTIuNzM4ODEgMzEuMzIzNDQsLTYxLjMwNDkyIC0yLjkyNTQzLC04LjE1Nzc1IC0yMC45OTczNywtNi4wMDYwOCAtMjAuOTk3MzcsLTYuMDA2MDggbCAtNjAuMTQ3ODksMC4zNzYxNCBjIDAsMCAtNC40NTYxNywtMC42MDg5OCAtNy43NjQ5MiwxLjM2ODM3IC0zLjIyOTg2LDEuOTM2NzUgLTUuMzA1MDksNi40NTM4NCAtNS4zMDUwOSw2LjQ1Mzg0IDAsMCAtOS41MjczNSwyNS4zNDI1MiAtMjIuMjE4OTEsNDYuODk1MTIgLTI2Ljc3NzgxLDQ1LjQ3NDIxIC0zNy40ODgzNyw0Ny44ODE0MSAtNDEuODY1NzYsNDUuMDUxNTEgLTEwLjE4NDA5LC02LjU4MTYgLTcuNjM3MjIsLTI2LjQzMzg4IC03LjYzNzIyLC00MC41NDM5NyAwLC00NC4wNzIzOSA2LjY4NDMxLC02Mi40NTAwMSAtMTMuMDIxMDksLTY3LjIwNDcyIC02LjUzODYxLC0xLjU3ODUyIC0xMS4zNTMsLTIuNjI1NzEgLTI4LjA3NDUzLC0yLjc5NDA3IC0yMS40NTgxOSwtMC4yMTg1MSAtMzkuNjIzMzIsMC4wNjgxIC00OS45MDUyNSw1LjEwMzM2IC02Ljg0MTk4LDMuMzU4ODcgLTEyLjEyMzI1LDEwLjgxODEgLTguOTAyODEsMTEuMjUwMzUgMy45NzQ5LDAuNTMwMTYgMTIuOTc1NjYsMi40MjUxMSAxNy43NDcwNiw4LjkyMTkzIDYuMTYzNzcsOC4zODcwMiA1Ljk0NzY0LDI3LjIxNTk5IDUuOTQ3NjQsMjcuMjE1OTkgMCwwIDMuNTQzOTMsNTEuODgwMjggLTguMjcwMDEsNTguMzIwOTkgLTguMTA4NzQsNC40MjE1NyAtMTkuMjI5MDEsLTQuNjAxODcgLTQzLjEwODgxLC00NS44NjEwOCAtMTIuMjMwNjEsLTIxLjEzMTEgLTIxLjQ2NzgzLC00NC40OTc0NiAtMjEuNDY3ODMsLTQ0LjQ5NzQ2IDAsMCAtMS43NzY3MywtNC4zNjA2NyAtNC45NTY1LC02LjY5OTgxIC0zLjg1NDQsLTIuODMzNDkgLTkuMjQxODcsLTMuNzI5MDMgLTkuMjQxODcsLTMuNzI5MDMgbCAtNTcuMTU0NDk5LDAuMzcwMTYgYyAwLDAgLTguNTgwMzcsMC4yNDM1OCAtMTEuNzI1NTIsMy45NzQ5OSAtMi44MDcyNSwzLjMyMDY2IC0wLjIyNDQ4LDEwLjE4MTY3IC0wLjIyNDQ4LDEwLjE4MTY3IDAsMCA0NC43NDIyNTksMTA0LjY4NTk0IDk1LjQwNjk0OSwxNTcuNDM5MDcgNDYuNDY3NjMsNDguMzgwNTIgOTkuMjE4NDgsNDUuMjAxOTYgOTkuMjE4NDgsNDUuMjAxOTYgbCAwLDAgeiIgaWQ9InBhdGg5IiBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtcnVsZTpldmVub2RkIi8+PC9nPjwvc3ZnPg==" alt=""/>
@@ -48,7 +45,6 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </footer>
 

@@ -19,13 +19,15 @@ const Home = () => {
         <HomeWrapper>
             <div className='home  py-3'>
                 <div className="container">
-                 
+
                     <div className='w-100 row  d-flex align-items-center justify-content-center'>
                         <div className="col-3 col-md-4  my-1 mini-sections  mx-1">
-                            <div className='d-flex align-items-center justify-content-center flex-wrap'>
-                                <FontAwesomeIcon className='h1 mb-0' icon={faTruckPlane} />
-                                <span>Transportlar</span>
-                            </div>
+                            <Link to={'/transport'}>
+                                <div className='d-flex align-items-center justify-content-center flex-wrap'>
+                                    <FontAwesomeIcon className='h1 mb-0' icon={faTruckPlane} />
+                                    <span>Transportlar</span>
+                                </div>
+                            </Link>
                         </div>
                         <div className="  col-3 col-md-4 my-1  mini-sections mx-1 ">
                             <div className='d-flex align-items-center justify-content-center flex-wrap'>
@@ -96,7 +98,7 @@ const Home = () => {
                 <div className='container_sudjete'>
                     <h1 className='h1_text'>UzTicket syudjetlar</h1>
                     <div className='d-flex'>
-                    
+
                     </div>
                 </div>
             </section>
