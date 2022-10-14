@@ -7,6 +7,10 @@ header{
     z-index:3;
     width: 100%;
 } 
+.header_acive {
+    background-color: #fff;
+    transition: 0.4s;
+}
 .logo{
     width: 60px;
 }

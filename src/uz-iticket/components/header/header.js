@@ -10,6 +10,12 @@ import iconBar from './images/bar.png'
 import iconClose from './images/close.png'
 const Header = () => {
 
+    let header = document.getElementById("header")
+
+    window.addEventListener("scroll", () => {
+        header.classList.toggle("header_acive", window.scrollY > 100)
+    })
+
     const [mdnav, setMdnav] = useState(true);
     function hidemd() {
         setMdnav(!mdnav)
