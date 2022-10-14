@@ -5,9 +5,6 @@ import FooterWrapper from './footerWrapper'
 const Footer = () => {
     return (
         <FooterWrapper>
-
-            {/* Start on Footer */}
-
             <footer>
                 <div className='container'>
                     <Link to={"#"} className='link_one'>UzTicket</Link>
@@ -49,7 +46,6 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </footer>
 

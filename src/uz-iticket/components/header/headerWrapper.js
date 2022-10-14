@@ -6,11 +6,17 @@ header{
     position: fixed;
     z-index:3;
     width: 100%;
+    transition: 0.3s;
+    transform-origin: top;
 } 
+<<<<<<< HEAD
 .header_acive {
     background-color: #fff;
     transition: 0.4s;
 }
+=======
+
+>>>>>>> 59aff5751fca3cfca36ea62096f2febdb0c809b0
 .logo{
     width: 60px;
 }
@@ -22,8 +28,7 @@ header{
 .register-link{
 }
 .links{
-    font-size: 13px !important;
-
+    font-size: 13px !important; 
 } 
  .d-none-nav{
     transition: 0.5s;

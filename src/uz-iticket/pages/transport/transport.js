@@ -1,8 +1,12 @@
 import React from 'react'
+import TransportWrapper from './transportWrapper';
 
 const Transport = () => {
   return (
-    <div>Transport</div>
+    <TransportWrapper>
+      <div className='transport-section'>v </div>
+    </TransportWrapper>
+    
   )
 }
 
