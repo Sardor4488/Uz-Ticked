@@ -12,5 +12,8 @@ a{
     
 }
 
+.links {
+    font-size: 13px !important;
+}
 `
 export default IndexWrapper

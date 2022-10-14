@@ -1,5 +1,5 @@
-import { faCcMastercard, faCcVisa, faGooglePay } from '@fortawesome/free-brands-svg-icons'
-import { faBed, faBusinessTime, faCreditCard, faHotel, faPlaneDeparture, faRocket, faShieldHalved, faTrain, faTreeCity, faTruckPlane, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { faCcMastercard, faCcVisa } from '@fortawesome/free-brands-svg-icons'
+import {  faBusinessTime, faCreditCard, faHotel,  faRocket,   faTreeCity, faTruckPlane, faUtensils } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // SWIPER
 import React from "react";

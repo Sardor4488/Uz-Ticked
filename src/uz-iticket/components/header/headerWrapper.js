@@ -9,7 +9,6 @@ header{
     transition: 0.3s;
     transform-origin: top;
 } 
-
 .logo{
     width: 60px !important;
 }
