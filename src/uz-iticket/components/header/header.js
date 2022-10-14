@@ -29,7 +29,6 @@ const Header = () => {
         };
     }, []);
 
-    
     return (
         <HeaderWrapper>
             {/* <div className='shadow-md-nav'></div> */}
