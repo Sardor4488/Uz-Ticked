@@ -145,8 +145,8 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='ul_list'>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                    <div className='ul_list row'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Aviabiletlar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -162,7 +162,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Poyezdlar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -178,7 +178,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Avtobuslar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -194,7 +194,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Elektrik-poyezd</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -210,7 +210,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Turlar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -226,7 +226,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Mehmonhonalar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
