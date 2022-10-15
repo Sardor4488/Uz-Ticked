@@ -9,16 +9,15 @@ import { faBus, faCalendar, faCalendarAlt, faPlane, faTrain, faTruckPlane } from
 
 
 const Transport = () => {
-    const [value, setValue] = React.useState('1');
-     
+    const [value, setValue] = React.useState('1'); 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
   return (
     <TransportWrapper>
       <div className='transport-section'>
-        <div class="container">
-          <div className='cont-transports-search'> 
+        <div className="container">
+          <div className='cont-transports-search'>
               <Box sx={{ width: '100%', typography: 'body1' }}>
                   <TabContext value={value}>
                       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>

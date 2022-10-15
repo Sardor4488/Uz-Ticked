@@ -73,8 +73,8 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="text-start d-flex justify-content-start col-12 col-md-12 col-lg-4">
+                    <div className="row">
+                        <div className="text-start d-flex justify-content-start col-12 col-md-12 col-lg-4">
                             <div className='text-white  d-flex justify-content-center align-items-center'>
                                 <img src={security} className='me-2' alt="rasm topilmadi" />
                                 <div>
@@ -87,14 +87,14 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center text-white">
+                        <div className="col-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center text-white">
                             <img src={n1} alt="rasm topilmadi" />
                             <div>
                                 <span>UzTicked.uz — O'zbekistondagi yagona <br /> online transport platformasi</span>
                             </div>
                         </div>
-                        <div class=" text-whitecol-12 col-md-12 col-lg-4 d-flex justify-content-end">
-                            <Link to={''} className='text-white'>
+                        <div className=" text-whitecol-12 col-md-12 col-lg-4 d-flex justify-content-end">
+                            <Link to={'#'} className='text-white'>
                                 <img className='playMarketImg' src={playMarket} alt="rasm topilmadi" />
                                 <br /> <span>UzTicket mobil ilovasi</span>
                             </Link><div>
