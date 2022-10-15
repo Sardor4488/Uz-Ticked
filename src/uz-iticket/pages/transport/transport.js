@@ -14,7 +14,7 @@ const Transport = () => {
   return (
     <TransportWrapper>
       <div className='transport-section'>
-        <div class="container">
+        <div className="container">
           <div className='cont-transports-search'>
               <Box sx={{ width: '100%', typography: 'body1' }}>
                   <TabContext value={value}>
