@@ -32,7 +32,7 @@ const Header = () => {
     return (
         <HeaderWrapper>
             {/* <div className='shadow-md-nav'></div> */}
-            <header id='header' className={` ${scrollPosition > 70 ? "bg-white  " : ""}header py-2 px-3 d-flex justify-content-between  align-items-center`}>
+            <header  className={` ${scrollPosition > 70 ? "bg-white  " : ""}header py-2 px-3 d-flex justify-content-between  align-items-center`}>
                 <Link to={'/'}>
                     <div className=' d-flex align-items-center  '>
 
