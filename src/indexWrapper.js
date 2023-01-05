@@ -15,5 +15,8 @@ a{
 .links {
     font-size: 13px !important;
 }
+.c-pointer{
+    cursor: pointer;
+}
 `
 export default IndexWrapper

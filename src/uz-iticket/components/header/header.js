@@ -38,7 +38,7 @@ const Header = () => {
                 <Link to={"/"}>
                     <div className=" d-flex align-items-center  ">
                         <img className="logo" src={logo} alt="" />
-                        <h5 className="logo-text">UzTicket</h5>
+                        <h5 className="logo-text">Uz-Ticket</h5>
                     </div>
                 </Link>
                 <div className="d-flex align-items-center">
