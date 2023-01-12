@@ -43,5 +43,6 @@ a{
     border-radius: 1px;
     margin-bottom: 5px;
 }
+
 `
 export default IndexWrapper

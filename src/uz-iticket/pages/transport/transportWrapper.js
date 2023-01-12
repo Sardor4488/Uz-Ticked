@@ -12,10 +12,12 @@ const TransportWrapper = styled.div`
     
 } 
 .date-transports{
-    max-width: 130px !important;
-    background-color: #f2f2f2;
+    max-width: 100px !important;
+    text-align: center;
+    background-color: #0D6EFD;
+    color: white;
     border-radius: 7px;
-    padding: 10px;
+    padding: 8px;
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
     padding: 0 0 0 5px;
@@ -26,8 +28,7 @@ const TransportWrapper = styled.div`
     border-radius: 8px;
     background-color: #fff;
     width: 100%;
-    height: 200px;
-}
+ }
 
 .search_card {
     border: 1px solid #d8d8d8;
@@ -119,6 +120,80 @@ const TransportWrapper = styled.div`
 }
 .input-count-ticket{
     width: 40px;
+}
+.title-transport{
+    font-size: 17px !important;
+    font-weight: bold;
+}
+tbody td .place,  .from-to, .name-transpor span , .place-direction   {
+    font-size: 13px;
+    color: #5b5b5b !important;
+}
+.direction-phone{
+    width: 300px !important;
+}
+.btn-primary {
+    background-color: #0D6EFD !important;
+}
+thead tr td{
+    font-weight: 600;
+}
+.p-fixed{
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 9px 8px -7px rgba(0,0,0,0.75);
+
+}
+.w-85{
+    width: 85%;
+}
+.name-transport{
+    min-width: 222.6px !important;
+}
+.train{
+background-color: #4e95fe;
+border-radius: 5px;
+color: #fff !important;
+padding: 5px;
+font-size: 16px;
+}
+.title-transport span{
+    font-size: 17px !important;
+    font-weight: normal;
+}
+.from{
+    margin-left: 200px !important;
+}
+.TabPanel{
+    padding: 10px !important;
+
+}
+.TabPanel ul{
+    height: 40px !important; 
+}
+.card{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+
+}
+.information-reys  {
+    font-size: 16px !important;
+}
+
+@media screen and (min-width: 992px){
+.direction-pc{
+    display: block !important;
+}
+.direction-phone{
+    display: none !important;
+}
+}
+@media screen and (max-width: 992px){
+.direction-pc{
+    display: none !important;
+}
 }
 `
 export default TransportWrapper;
