@@ -18,5 +18,25 @@ a{
 .c-pointer{
     cursor: pointer;
 }
+.icon{
+    font-size: 35px !important;
+}
+.star{
+    color: yellow;
+}
+.credit-card{
+    color: rgb(38, 0, 253)
+    
+}
+.security{
+
+}
+.security{
+    color: green;
+}
+.uzcard{
+    width: 19px !important;
+    margin-bottom: 6px;
+}
 `
 export default IndexWrapper

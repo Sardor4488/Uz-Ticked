@@ -1,5 +1,5 @@
 import { faCcMastercard, faCcVisa } from '@fortawesome/free-brands-svg-icons'
-import {  faBusinessTime, faCreditCard, faHotel,  faRocket,   faTreeCity, faTruckPlane, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { faBusinessTime, faCreditCard, faHotel, faRocket, faShield, faShieldAlt, faStar, faTreeCity, faTruckPlane, faUtensils } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // SWIPER
 import React from "react";
@@ -14,8 +14,8 @@ import img3 from "./imgs/image_2022-10-12_16-39-58.png"
 import img4 from "./imgs/image_2022-10-12_16-40-47.png"
 import img5 from "./imgs/image_2022-10-12_16-41-06.png"
 import img6 from "./imgs/image_2022-10-12_16-41-30.png"
-
-
+import uzcardIcon from "./../../images/uzcard-icon.png"
+import homocardIcon from "./../../images/Humo-01.jpg" 
 const Home = () => {
     return (
         <HomeWrapper>
@@ -76,12 +76,12 @@ const Home = () => {
                     <div className="row">
                         <div className="text-start d-flex justify-content-start col-12 col-md-12 col-lg-4">
                             <div className='text-white  d-flex justify-content-center align-items-center'>
-                                <img src={security} className='me-2' alt="rasm topilmadi" />
+                                < FontAwesomeIcon icon={faShieldAlt} className="icon  me-2" />
                                 <div>
                                     <span className=' border-bottom'>Xavfsiz to'lov</span>
                                     <div>
-                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCreditCard} />
-                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCcVisa} />
+                                        <img src={uzcardIcon} className="uzcard" alt="" />                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCcVisa} />
+                                        <img src={homocardIcon} className="uzcard" alt="" />                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCcVisa} />
                                         <FontAwesomeIcon className='fs-5 mx-1' icon={faCcMastercard} />
                                     </div>
                                 </div>
@@ -114,17 +114,17 @@ const Home = () => {
                         <p> Ежедневно Туту.ру посещают 1 млн человек. Вот за что любят наш сервис:</p>
                         <div className='row pt-5'>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
-                                <img src={img1} alt="" />
+                                <FontAwesomeIcon icon={faStar} className="icon star" />
                                 <h6>Проверенные перевозчики</h6>
                                 <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
-                                <img src={img2} alt="" />
+                                <FontAwesomeIcon icon={faCreditCard} className="icon credit-card" />
                                 <h6>Проверенные перевозчики</h6>
                                 <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
-                                <img src={img3} alt="" />
+                                < FontAwesomeIcon icon={faShieldAlt} className="icon security" />
                                 <h6>Проверенные перевозчики</h6>
                                 <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
                             </div>
