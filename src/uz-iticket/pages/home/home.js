@@ -1,5 +1,5 @@
 import { faCcMastercard, faCcVisa } from '@fortawesome/free-brands-svg-icons'
-import { faBusinessTime, faCreditCard, faHotel, faRocket, faShield, faShieldAlt, faStar, faTreeCity, faTruckPlane, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { faBusinessTime, faCreditCard, faHotel, faRocket,  faShieldAlt, faStar, faTreeCity, faTruckPlane, faUtensils } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // SWIPER
 import React from "react";
@@ -15,7 +15,7 @@ import img4 from "./imgs/image_2022-10-12_16-40-47.png"
 import img5 from "./imgs/image_2022-10-12_16-41-06.png"
 import img6 from "./imgs/image_2022-10-12_16-41-30.png"
 import uzcardIcon from "./../../images/uzcard-icon.png"
-import homocardIcon from "./../../images/Humo-01.jpg" 
+import homocardIcon from "./../../images/Humo-01.jpg"
 const Home = () => {
     return (
         <HomeWrapper>
@@ -80,9 +80,10 @@ const Home = () => {
                                 <div>
                                     <span className=' border-bottom'>Xavfsiz to'lov</span>
                                     <div>
-                                        <img src={uzcardIcon} className="uzcard" alt="" />                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCcVisa} />
-                                        <img src={homocardIcon} className="uzcard" alt="" />                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCcVisa} />
-                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCcMastercard} />
+                                        <img src={uzcardIcon} className="uzcard" alt="" /> 
+                                        <img src={homocardIcon} className="humo ms-1" alt="" />                                        
+                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCcVisa} />
+                                        <FontAwesomeIcon className='fs-5 ' icon={faCcMastercard} />
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +91,7 @@ const Home = () => {
                         <div className="col-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center text-white">
                             <img src={n1} alt="rasm topilmadi" />
                             <div>
-                                <span>UzTicked.uz — O'zbekistondagi yagona <br /> online transport platformasi</span>
+                                <span>UzTicket.uz — O'zbekistondagi yagona <br /> online transport platformasi</span>
                             </div>
                         </div>
                         <div className=" text-whitecol-12 col-md-12 col-lg-4 d-flex justify-content-end">
@@ -129,8 +130,7 @@ const Home = () => {
                                 <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
-                                <img src={img4} alt="" />
-                                <h6>Проверенные перевозчики</h6>
+{/* < FontAwesomeIcon icon={faArrow} />                                <h6>Проверенные перевозчики</h6> */}
                                 <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>

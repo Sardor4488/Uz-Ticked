@@ -38,5 +38,10 @@ a{
     width: 19px !important;
     margin-bottom: 6px;
 }
+.humo{
+    width: 22.5px;
+    border-radius: 1px;
+    margin-bottom: 5px;
+}
 `
 export default IndexWrapper
