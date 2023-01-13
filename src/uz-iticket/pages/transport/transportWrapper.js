@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import backgraundImg from './../../images/choos-back.jpg'
 const TransportWrapper = styled.div`
 .transport-section{
     padding-top: 100px;
@@ -8,7 +8,7 @@ const TransportWrapper = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(https://cdn1.tu-tu.ru/images2/bemp/page/main/etrains_3.jpg);
+    background-image: url(${backgraundImg});
     
 } 
 .date-transports{
