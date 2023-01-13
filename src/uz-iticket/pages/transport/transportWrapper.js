@@ -29,17 +29,28 @@ const TransportWrapper = styled.div`
     background-color: #fff;
     width: 100%;
  }
-
+.countrys{
+    width: 00px !important;
+}
 .search_card {
     border: 1px solid #d8d8d8;
     border-radius: 12px;
     background: #f0f4f8;
     padding: 18px 16px 20px;
     margin-bottom: 40px;
-    display: flex;
-    align-items: center;
 }
-
+.countrys span {
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.abab{
+    display: grid;
+    grid-gap: 10px;
+}
+.transport-away-time{
+    font-style: ;
+}
 .search_card-icon {
     margin-left: 7px !important;
     color: gray;
@@ -47,7 +58,7 @@ const TransportWrapper = styled.div`
     margin: 0;
 }
 
-.search_card-input {
+.search-card-input {
     margin-right: 10px;
 }
 .pasajir{

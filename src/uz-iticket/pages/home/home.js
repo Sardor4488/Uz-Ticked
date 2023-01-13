@@ -8,10 +8,6 @@ import security from './imgs/security.svg'
 import n1 from './imgs/n1.svg'
 import playMarket from './imgs/google-play-badge-retina.png'
 import { Link } from 'react-router-dom'
-import img1 from "./imgs/image_2022-10-12_16-39-32.png"
-import img2 from "./imgs/image_2022-10-12_16-39-45.png"
-import img3 from "./imgs/image_2022-10-12_16-39-58.png"
-import img4 from "./imgs/image_2022-10-12_16-40-47.png"
 import img5 from "./imgs/image_2022-10-12_16-41-06.png"
 import img6 from "./imgs/image_2022-10-12_16-41-30.png"
 import uzcardIcon from "./../../images/uzcard-icon.png"
@@ -31,14 +27,7 @@ const Home = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="  col-3 col-md-4 my-1  mini-sections mx-1 ">
-                            <Link className='text-white' to={'/transport'}>
-                                <div className='d-flex align-items-center justify-content-center flex-wrap'>
-                                    <FontAwesomeIcon className='h1' icon={faTreeCity} />
-                                    <span>Sayohat</span>
-                                </div>
-                            </Link>
-                        </div>
+                       
                         <div className="   col-3 col-md-4 my-1 mini-sections  mx-1">
                             <Link className='text-white' to={'/hotels'}>
                                 <div className='d-flex align-items-center justify-content-center flex-wrap'>
@@ -55,22 +44,15 @@ const Home = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="  col-3 col-md-4 my-1 mini-sections mx-1 ">
-                            <Link className='text-white' to={'/travel'}>
+                        <div className="  col-3 col-md-4 my-1  mini-sections mx-1 ">
+                            <Link className='text-white' to={'/transport'}>
                                 <div className='d-flex align-items-center justify-content-center flex-wrap'>
-                                    <FontAwesomeIcon className='h1' icon={faRocket} />
-                                    <span>Sarguzasht</span>
+                                    <FontAwesomeIcon className='h1' icon={faTreeCity} />
+                                    <span>Sayohat</span>
                                 </div>
                             </Link>
                         </div>
-                        <div className="  col-3 col-md-4 my-1 mini-sections mx-1 ">
-                            <Link className='text-white' to={'/work-travel'}>
-                                <div className='d-flex align-items-center justify-content-center flex-wrap'>
-                                    <FontAwesomeIcon className='h1' icon={faBusinessTime} />
-                                    <span>Ish Safari</span>
-                                </div>
-                            </Link>
-                        </div>
+                        
                     </div>
 
                     <div className="row">
