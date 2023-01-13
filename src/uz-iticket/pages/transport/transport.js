@@ -65,29 +65,29 @@ const Transport = () => {
       <div className='transport-section'>
         <div className="container">
           <div className='search_card'>
-            <div class="row">
-              <div class="col-12 col-lg-6  ">
+            <div className="row">
+              <div className="col-12 col-lg-6  ">
 
 
-                <div class="row my-2 pe-1 ">
-                  <div class="col-12 col-md-5 px-0 py-0"><input type="text" className='w-100' placeholder='Qayerdan' /></div>
-                  <div class="col-12 col-md-2 px-0 py-0  d-flex align-items-center justify-content-center"><FontAwesomeIcon className='search-card-icon c-pointer' icon={faRightLeft} /></div>
-                  <div class="col-12 col-md-5 px-0 py-0"><input type="text" className='w-100' placeholder='Qayerga' /></div>
+                <div className="row my-2 pe-1 ">
+                  <div className="col-12 col-md-5 px-0 py-0"><input type="text" className='w-100' placeholder='Qayerdan' /></div>
+                  <div className="col-12 col-md-2 px-0 py-0  d-flex align-items-center justify-content-center"><FontAwesomeIcon className='search-card-icon c-pointer' icon={faRightLeft} /></div>
+                  <div className="col-12 col-md-5 px-0 py-0"><input type="text" className='w-100' placeholder='Qayerga' /></div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6  ">
-                <div class="row my-2">
-                  <div class="col-12 col-md-4 px-0 py-0">
+              <div className="col-12 col-lg-6  ">
+                <div className="row my-2">
+                  <div className="col-12 col-md-4 px-0 py-0">
                     <input type="date" className='w-100 c-pointer' placeholder='Qayerdan' />
                   </div>
-                  <div class="hidden-back-input col-12 col-md-4 px-0 text-center " >
+                  <div className="hidden-back-input col-12 col-md-4 px-0 text-center " >
                     <button onClick={showdata} className={`${showdate ? 'd-block c-pointer' : 'd-none'} m-auto btn btn-back   `}>Qaytish sanasi</button>
                     <div className='w-100 text-center'>
                       <input type="date" className={` ${showdate ? 'd-none' : 'd-block'} choos-back-date ms-1 w-100 c-pointer`} placeholder='Sanani tanlang' />
                       <span onClick={showdata} className={`${showdate ? 'd-none' : 'd-block  c-pointer'} `}> <FontAwesomeIcon icon={faX} /> yopish</span>
                     </div>
                   </div>
-                  <div class="col-12 col-md-4 text-center  px-0 py-0">
+                  <div className="col-12 col-md-4 text-center  px-0 py-0">
                     <button className='btn btn-primary ms-3'>Chiptalarni qidirish</button>
 
                   </div>
