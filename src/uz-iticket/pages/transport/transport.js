@@ -5,7 +5,7 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightLong, faBus, faCalendarAlt, faPlane, faRightLeft, faTrain, faTruckPlane, faX } from '@fortawesome/free-solid-svg-icons';
+import {  faBus, faCalendarAlt, faPlane, faRightLeft, faTrain, faTruckPlane, faX } from '@fortawesome/free-solid-svg-icons';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import TransportTrain from './components/transportTrain';
