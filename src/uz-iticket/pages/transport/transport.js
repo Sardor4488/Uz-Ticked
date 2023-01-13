@@ -83,8 +83,8 @@ const Transport = () => {
                   <div class="col-12 col-md-4 px-0 py-0 d-flex justify-content-center align-items-center" >
                     <span onClick={showdata} className={`${showdate ? 'd-block c-pointer' : 'd-none'} `}>Qaytish sanasi</span>
                     <div>
-                    <input type="date" className={` ${showdate ? 'd-none' : 'd-block'} w-100 c-pointer`} placeholder='Qayerdan' />
-                    <span onClick={showdata} className={`${showdate ? 'd-none' : 'd-block ms-2 c-pointer'}`}> <FontAwesomeIcon icon={faX} /> yopish</span>
+                      <input type="date" className={` ${showdate ? 'd-none' : 'd-block'} w-100 c-pointer`} placeholder='Qayerdan' />
+                      <span onClick={showdata} className={`${showdate ? 'd-none' : 'd-block ms-2 c-pointer'}`}> <FontAwesomeIcon icon={faX} /> yopish</span>
                     </div>
                   </div>
                   <div class="col-12 col-md-4  px-0 py-0">
@@ -104,7 +104,7 @@ const Transport = () => {
               <span onClick={showdata} className={`${showdate ? 'd-none' : 'd-block ms-2'}`}> <FontAwesomeIcon icon={faX} /> yopish</span>
               <button className='btn btn-primary ms-3'>Chiptalarni qidirish</button> */}
             </div>
-            <div className='countrys m-0'>
+            <div className='countrys m-auto'>
               <span>Toshkent</span>
               <span>Samarqand</span>
               <span>Buxoro</span>
@@ -116,7 +116,7 @@ const Transport = () => {
               <span>Qarshi</span>
               <span>Jizzax</span>
               <span>Termiz</span>
-              <span>Guliston</span>
+              <span>Guliston</span>  <br className='guliston-br' />
               <span>Qo'qon</span>
               <span>Marg'ilon</span>
               <span>Pop</span>
@@ -253,7 +253,11 @@ const Transport = () => {
                       </tr>
                     </tbody>
                   </Table>
-                  <div className="card direction-phone p-2 my-2 m-auto">
+
+                  {/* FOR BUS  */}
+
+                  {/* FOR PHONE VERSION */}
+                  <div className="card direction-phone p-2 py-3 my-2 m-auto">
 
                     <div className='d-flex justify-content-between align-items-center'>
                       <span>Poyezdlar</span>
@@ -288,10 +292,9 @@ const Transport = () => {
                       <span>100</span>
                       <span>110000 so'm</span>
                     </div>
-                    <Button className='btn btn-primary py-1 m-2'>Yo'nalishni tanlash</Button>
+                    <Button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</Button>
                   </div>
-
-                  {/* FOR BUS  */}
+                  {/* FOR PHONE VERSION */}
 
                 </TabPanel>
                 <TabPanel value="2">Samalyotlar

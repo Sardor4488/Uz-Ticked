@@ -30,7 +30,8 @@ const TransportWrapper = styled.div`
     width: 100%;
  }
 .countrys{
-    width: 00px !important;
+    width: 100% !important;
+    text-align: center;
 }
 .search_card {
     border: 1px solid #d8d8d8;
@@ -48,9 +49,9 @@ const TransportWrapper = styled.div`
     display: grid;
     grid-gap: 10px;
 }
-.transport-away-time{
+/* .transport-away-time{
     font-style: ;
-}
+} */
 .search_card-icon {
     margin-left: 7px !important;
     color: gray;
@@ -192,7 +193,14 @@ font-size: 16px;
 .information-reys  {
     font-size: 16px !important;
 }
-
+.guliston-br{
+        display: block !important;
+    }
+@media screen and (min-width: 1200px){
+    .guliston-br{
+        display: none !important;
+    }
+}
 @media screen and (min-width: 992px){
 .direction-pc{
     display: block !important;
@@ -205,6 +213,9 @@ font-size: 16px;
 .direction-pc{
     display: none !important;
 }
+.countrys{
+        display: none !important;
+    }
 }
 `
 export default TransportWrapper;
