@@ -6,7 +6,8 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong, faBus, faCalendarAlt, faPlane, faRightLeft, faTrain, faTruckPlane, faX } from '@fortawesome/free-solid-svg-icons';
-import { Button, Table } from 'react-bootstrap';
+import {  Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const Transport = () => {
@@ -81,14 +82,14 @@ const Transport = () => {
                     <input type="date" className='w-100 c-pointer' placeholder='Qayerdan' />
                   </div>
                   <div className="hidden-back-input col-12 col-md-4 px-0 text-center " >
-                    <button onClick={showdata} className={`${showdate ? 'd-block c-pointer' : 'd-none'} m-auto btn btn-back   `}>Qaytish sanasi</button>
+                    <button onClick={showdata} className={`${showdate ? 'd-block c-pointer' : 'd-none'} m-auto btn btn-back mx-1   `}>Qaytish sanasi</button>
                     <div className='w-100 text-center'>
                       <input type="date" className={` ${showdate ? 'd-none' : 'd-block'} choos-back-date ms-1 w-100 c-pointer`} placeholder='Sanani tanlang' />
                       <span onClick={showdata} className={`${showdate ? 'd-none' : 'd-block  c-pointer'} `}> <FontAwesomeIcon icon={faX} /> yopish</span>
                     </div>
                   </div>
                   <div className="col-12 col-md-4 text-center  px-0 py-0">
-                    <button className='btn btn-primary ms-3'>Chiptalarni qidirish</button>
+                    <button className='btn btn-primary '>Chiptalarni qidirish</button>
 
                   </div>
                 </div>
@@ -136,21 +137,11 @@ const Transport = () => {
                 </Box>
                 <TabPanel className='TabPanel' value="1">
 
-                  {/* FOR RAILWAYS */}
-
+                  {/* FOR RAILWAYS START */}
                   <div className='date-transports my-1'>
                     Poyezdlar
                   </div>
-                  {/* <ul className={`${scrollPosition > 450 ? "p-fixed w-85 d-flex justify-content-between align-items-center " : "d-none" }`}>
-                    <li className='fw-bold'>Poyezdlar</li>
-                    <li className='fw-bold ms-5 ps-5'>Ketish</li>
-                    <li className='fw-bold'>Yetib kelish</li>
-                    <li className='fw-bold'>Sayohat vaqti</li>
-                    <li className='fw-bold'>Joylar turi</li>
-                    <li className='fw-bold'>Joylar soni</li>
-                    <li className='fw-bold'>Narxi</li>
-                    <li className='fw-bold'>Tanlash</li>
-                  </ul> */}
+
                   <Table striped className='direction-pc'>
                     <thead>
                       <tr className=''>
@@ -173,10 +164,10 @@ const Transport = () => {
                           <FontAwesomeIcon className='mx-1 from-to' icon={faArrowRightLong} />
                           <span className='place'>Qashqadaryo</span>
                         </td>
-                        <td><span className='fw-bold'>07:28</span><br />
+                        <td className='transport-away-time'><span className='fw-bold'>07:28</span><br />
                           <span className='from-to'>Toshkentdan</span>
                         </td>
-                        <td><span className='fw-bold'>07:28</span><br />
+                        <td className='transport-away-time'><span className='fw-bold'>07:28</span><br />
                           <span className='from-to'>Qashqadaryoga</span>
                         </td>
                         <td><span className=''>07:28</span>
@@ -195,7 +186,9 @@ const Transport = () => {
                         </td>
                         <td><span className='fw-bold'>75000</span> so'm</td>
                         <td>
-                          <button className='btn btn-primary py-1'>Yo'nalishni <br /> tanlash</button>
+                          <Link to={'/choos-train'}>
+                            <button className='btn btn-primary py-1'>Yo'nalishni <br /> tanlash</button>
+                          </Link>
                         </td>
                       </tr>
                       {/* <div className='row'>
@@ -204,10 +197,48 @@ const Transport = () => {
                     </div> */}
                     </tbody>
                   </Table>
+                  {/* FOR PHONE VERSION TRAIN START*/}
+                  <div className="card direction-phone p-2 py-3 my-2 m-auto">
 
-                  {/* FOR RAILWAYS */}
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Poyezd</span>
+                      <div>
+                        <span className='train'>Zhong Tong 51</span><br />
+                        <span className='place-direction'>Toshkent</span>
+                        <FontAwesomeIcon className='mx-1 from-to' icon={faArrowRightLong} />
+                        <span className='place-direction'>Buxoro</span>
+                      </div>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Ketish</span>
+                      <span className='transport-away-time'>
+                        <span className='fw-bold'>7:44</span> <br />
+                        <span className='from-to'>Qashqadaryoga</span>
+                      </span>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Yetib kelish</span>
+                      <span className='transport-away-time'>
+                        <span className='fw-bold'>8:55</span>
+                        <br />
+                        <span className='from-to'>Qashqadaryoga</span>
+                      </span>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Sayohat vaqti</span>
+                      <span>02:54</span>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center '>
+                      <span>Плацкартный</span>
+                      <span>100</span>
+                      <span>110000 so'm</span>
+                    </div>
+                    <Link to={'/choos-train'}><button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</button></Link>
+                  </div>
+                  {/* FOR PHONE VERSION TRAIN END*/}
+                  {/* FOR RAILWAYS END*/}
 
-                  {/* FOR BUS  */}
+                  {/* FOR BUS  START*/}
                   <div className='date-transports my-1'>
                     Avtobuslar
                   </div>
@@ -232,11 +263,10 @@ const Transport = () => {
                           <FontAwesomeIcon className='mx-1 from-to' icon={faArrowRightLong} />
                           <span className='place'>Buxoro</span>
                         </td>
-                        <td><span className='fw-bold'>07:28</span> <br />
+                        <td className='transport-away-time'><span className='fw-bold'>07:28</span> <br />
                           <span className='from-to'>Qashqadaryoga</span>
-
                         </td>
-                        <td><span className='fw-bold'>07:28</span>
+                        <td className='transport-away-time'><span className='fw-bold'>07:28</span>
                           <br />
                           <span className='from-to'>Qashqadaryoga</span></td>
                         <td><span>_____</span></td>
@@ -248,19 +278,122 @@ const Transport = () => {
                         </td>
                         <td><span className='fw-bold'>75000</span> so'm</td>
                         <td>
-                          <button className='btn btn-primary py-1'>Yo'nalishni <br /> tanlash</button>
+                          <Link to={'/choos-train'}>
+                            <button className='btn btn-primary py-1'>Yo'nalishni <br /> tanlash</button>
+                          </Link>
                         </td>
                       </tr>
                     </tbody>
                   </Table>
-
-                  {/* FOR BUS  */}
-
-                  {/* FOR PHONE VERSION */}
+                  {/* FOR PHONE VERSION BUS START*/}
                   <div className="card direction-phone p-2 py-3 my-2 m-auto">
 
                     <div className='d-flex justify-content-between align-items-center'>
-                      <span>Poyezdlar</span>
+                      <span>Avtobus</span>
+                      <div>
+                        <span className='train'>Zhong Tong 51</span><br />
+                        <span className='place-direction'>Toshkent</span>
+                        <FontAwesomeIcon className='mx-1 from-to' icon={faArrowRightLong} />
+                        <span className='place-direction'>Buxoro</span>
+                      </div>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Ketish</span>
+                      <span className='transport-away-time'>
+                        <span className='fw-bold'>7:44</span> <br />
+                        <span className='from-to'>Qashqadaryoga</span>
+                      </span>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Yetib kelish</span>
+                      <span className='transport-away-time'>
+                        <span className='fw-bold'>8:55</span>
+                        <br />
+                        <span className='from-to'>Qashqadaryoga</span>
+                      </span>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Sayohat vaqti</span>
+                      <span>___</span>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center '>
+                      <span>Плацкартный</span>
+                      <span>100</span>
+                      <span>110000 so'm</span>
+                    </div>
+                    <Link to={'/choos-train'}><button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</button></Link>
+                  </div>
+                  {/* FOR PHONE VERSION BUS END*/}
+                  {/* FOR BUS  END*/}
+
+
+
+                </TabPanel>
+                <TabPanel value="2">Samalyotlar
+                  <div className='date-transports'>
+                    < FontAwesomeIcon className='text-dark' icon={faCalendarAlt} /> 04.01.2023
+                  </div>
+                </TabPanel>
+                <TabPanel value="3">
+
+                  {/* FOR RAILWAYS START*/}
+
+                  <Table striped className='direction-pc'>
+                    <thead>
+                      <tr className=''>
+                        <th>Poyezdlar</th>
+                        <th>Ketish</th>
+                        <th>Yetib kelish</th>
+                        <th>Sayohat vaqti</th>
+                        <th>Joylar turi</th>
+                        <th>Joylar soni</th>
+                        <th>Narxi</th>
+                        <th>Tanlash</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className='name-transport' scope="row">
+                          <span className='train'>Afrosiyob</span>
+                          <span className='mb-0 title-transport'>067F <span className=''>(СКР)</span> </span> <br />
+                          <span className='place'>Tashkent Jan</span>
+                          <FontAwesomeIcon className='mx-1 from-to' icon={faArrowRightLong} />
+                          <span className='place'>Qashqadaryo</span>
+                        </td>
+                        <td className='transport-away-time'><span className='fw-bold'>07:28</span><br />
+                          <span className='from-to'>Toshkentdan</span>
+                        </td>
+                        <td className='transport-away-time'><span className='fw-bold'>07:28</span><br />
+                          <span className='from-to'>Qashqadaryoga</span>
+                        </td>
+                        <td><span className=''>07:28</span>
+                        </td>
+                        <td>
+                          <span>Плацкартный</span> <br />
+                          <span>Купе</span> <br />
+                          <span>Люкс</span> <br />
+                          <span>СВ</span>
+                        </td>
+                        <td>
+                          <span>8</span> <br />
+                          <span>8</span> <br />
+                          <span>8</span> <br />
+                          <span>8</span>
+                        </td>
+                        <td><span className='fw-bold'>75000</span> so'm</td>
+                        <td>
+                          <Link to={'/choos-train'}>
+                            <button className='btn btn-primary py-1'>Yo'nalishni <br /> tanlash</button>
+                          </Link>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                  {/* FOR PHONE VERSION TRAIN START*/}
+                  <div className="card direction-phone p-2 py-3 my-2 m-auto">
+
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Poyezd</span>
                       <div>
                         <span className='train'>Zhong Tong 51</span><br />
                         <span className='place-direction'>Toshkent</span>
@@ -292,25 +425,101 @@ const Transport = () => {
                       <span>100</span>
                       <span>110000 so'm</span>
                     </div>
-                    <Button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</Button>
+                    <Link to={'/choos-train'}><button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</button></Link>
                   </div>
-                  {/* FOR PHONE VERSION */}
+                  {/* FOR PHONE VERSION TRAIN END*/}
+                  {/* FOR RAILWAYS */}
 
                 </TabPanel>
-                <TabPanel value="2">Samalyotlar
-                  <div className='date-transports'>
-                    < FontAwesomeIcon className='text-dark' icon={faCalendarAlt} /> 04.01.2023
+                <TabPanel value="4">
+
+                  {/* FOR BUS  START*/}
+
+                  <Table striped className='direction-pc'>
+                    <thead>
+                      <tr className=''>
+                        <th>Avtobuslar</th>
+                        <th>Ketish</th>
+                        <th>Yetib kelish</th>
+                        <th>Sayohat vaqti</th>
+                        <th>Joylar turi</th>
+                        <th>Joylar soni</th>
+                        <th>Narxi</th>
+                        <th>Tanlash</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className='name-transport' scope="row">
+                          <span className='train'>Zhong Tong 51</span><br />
+                          <span className='place'>Toshkent</span>
+                          <FontAwesomeIcon className='mx-1 from-to' icon={faArrowRightLong} />
+                          <span className='place'>Buxoro</span>
+                        </td>
+                        <td className='transport-away-time'><span className='fw-bold'>07:28</span> <br />
+                          <span className='from-to'>Qashqadaryoga</span>
+
+                        </td>
+                        <td className='transport-away-time'><span className='fw-bold'>07:28</span>
+                          <br />
+                          <span className='from-to'>Qashqadaryoga</span></td>
+                        <td><span>_____</span></td>
+                        <td>
+                          <span>O'rindiqli</span>
+                        </td>
+                        <td>
+                          <span>8</span>
+                        </td>
+                        <td><span className='fw-bold'>75000</span> so'm</td>
+                        <td>
+                          <Link to={'/choos-train'}>
+                            <button className='btn btn-primary py-1'>Yo'nalishni <br /> tanlash</button>
+                          </Link>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                  {/* FOR PHONE VERSION BUS START*/}
+                  <div className="card direction-phone p-2 py-3 my-2 m-auto">
+
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Avtobus</span>
+                      <div>
+                        <span className='train'>Zhong Tong 51</span><br />
+                        <span className='place-direction'>Toshkent</span>
+                        <FontAwesomeIcon className='mx-1 from-to' icon={faArrowRightLong} />
+                        <span className='place-direction'>Buxoro</span>
+                      </div>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Ketish</span>
+                      <span className='transport-away-time'>
+                        <span>7:44</span> <br />
+                        <span className='from-to'>Qashqadaryoga</span>
+                      </span>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Yetib kelish</span>
+                      <span className='transport-away-time'>
+                        <span>8:55</span>
+                        <br />
+                        <span className='from-to'>Qashqadaryoga</span>
+                      </span>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <span>Sayohat vaqti</span>
+                      <span>___</span>
+                    </div>
+                    <div className='d-flex justify-content-between align-items-center '>
+                      <span>Плацкартный</span>
+                      <span>100</span>
+                      <span>110000 so'm</span>
+                    </div>
+                    <Link to={'/choos-train'}><button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</button></Link>
                   </div>
-                </TabPanel>
-                <TabPanel value="3">Poyezdlar
-                  <div className='date-transports'>
-                    < FontAwesomeIcon className='text-dark' icon={faCalendarAlt} /> 04.01.2023
-                  </div>
-                </TabPanel>
-                <TabPanel value="4">Avtobuslar
-                  <div className='date-transports'>
-                    < FontAwesomeIcon className='text-dark' icon={faCalendarAlt} /> 04.01.2023
-                  </div>
+                  {/* FOR PHONE VERSION BUS END*/}
+                  {/* FOR BUS  END*/}
+
                 </TabPanel>
               </TabContext>
             </Box>

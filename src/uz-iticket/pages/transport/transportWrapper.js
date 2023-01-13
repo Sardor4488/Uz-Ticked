@@ -49,9 +49,10 @@ const TransportWrapper = styled.div`
     display: grid;
     grid-gap: 10px;
 }
-/* .transport-away-time{
-    font-style: ;
-} */
+.transport-away-time{
+line-height:17px;
+margin-bottom: 7px;
+}
 .search-card-icon {
     color: gray;
    
