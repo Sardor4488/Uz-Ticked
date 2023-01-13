@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import TransportWrapper from './transportWrapper';
-import { Box, Input, Tab } from '@mui/material';
+import { Box, Tab } from '@mui/material';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightLong, faBus, faCalendarAlt, faLeftRight, faMinus, faPlane, faPlus, faRightLeft, faTrain, faTrash, faTruckPlane, faX } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightLong, faBus, faCalendarAlt, faPlane, faRightLeft, faTrain, faTruckPlane, faX } from '@fortawesome/free-solid-svg-icons';
 import { Button, Table } from 'react-bootstrap';
 
 
@@ -71,7 +71,7 @@ const Transport = () => {
 
                 <div class="row my-2 pe-1 ">
                   <div class="col-12 col-md-5 px-0 py-0"><input type="text" className='w-100' placeholder='Qayerdan' /></div>
-                  <div class="col-12 col-md-2 px-0 py-0 d-flex align-items-center justify-content-center"><FontAwesomeIcon className='search_card-icon c-pointer' icon={faRightLeft} /></div>
+                  <div class="col-12 col-md-2 px-0 py-0  d-flex align-items-center justify-content-center"><FontAwesomeIcon className='search-card-icon c-pointer' icon={faRightLeft} /></div>
                   <div class="col-12 col-md-5 px-0 py-0"><input type="text" className='w-100' placeholder='Qayerga' /></div>
                 </div>
               </div>
@@ -80,14 +80,14 @@ const Transport = () => {
                   <div class="col-12 col-md-4 px-0 py-0">
                     <input type="date" className='w-100 c-pointer' placeholder='Qayerdan' />
                   </div>
-                  <div class="col-12 col-md-4 px-0 py-0 d-flex justify-content-center align-items-center" >
-                    <span onClick={showdata} className={`${showdate ? 'd-block c-pointer' : 'd-none'} `}>Qaytish sanasi</span>
-                    <div>
-                      <input type="date" className={` ${showdate ? 'd-none' : 'd-block'} w-100 c-pointer`} placeholder='Qayerdan' />
-                      <span onClick={showdata} className={`${showdate ? 'd-none' : 'd-block ms-2 c-pointer'}`}> <FontAwesomeIcon icon={faX} /> yopish</span>
+                  <div class="hidden-back-input col-12 col-md-4 px-0 text-center " >
+                    <button onClick={showdata} className={`${showdate ? 'd-block c-pointer' : 'd-none'} m-auto btn btn-back   `}>Qaytish sanasi</button>
+                    <div className='w-100 text-center'>
+                      <input type="date" className={` ${showdate ? 'd-none' : 'd-block'} choos-back-date ms-1 w-100 c-pointer`} placeholder='Sanani tanlang' />
+                      <span onClick={showdata} className={`${showdate ? 'd-none' : 'd-block  c-pointer'} `}> <FontAwesomeIcon icon={faX} /> yopish</span>
                     </div>
                   </div>
-                  <div class="col-12 col-md-4  px-0 py-0">
+                  <div class="col-12 col-md-4 text-center  px-0 py-0">
                     <button className='btn btn-primary ms-3'>Chiptalarni qidirish</button>
 
                   </div>
@@ -179,7 +179,7 @@ const Transport = () => {
                         <td><span className='fw-bold'>07:28</span><br />
                           <span className='from-to'>Qashqadaryoga</span>
                         </td>
-                        <td><span className='from-to'>07:28</span>
+                        <td><span className=''>07:28</span>
                         </td>
                         <td>
                           <span>Плацкартный</span> <br />

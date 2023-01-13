@@ -52,10 +52,9 @@ const TransportWrapper = styled.div`
 /* .transport-away-time{
     font-style: ;
 } */
-.search_card-icon {
-    margin-left: 7px !important;
+.search-card-icon {
     color: gray;
-    margin-right: 7px !important;
+   
     margin: 0;
 }
 
@@ -196,6 +195,13 @@ font-size: 16px;
 .guliston-br{
         display: block !important;
     }
+    .hidden-back-input .btn{
+        min-width: 168px !important;
+        margin-left: 5px;
+    }
+    .btn-back{
+        background-color: #d2d2d2;
+    }
 @media screen and (min-width: 1200px){
     .guliston-br{
         display: none !important;
@@ -216,6 +222,18 @@ font-size: 16px;
 .countrys{
         display: none !important;
     }
+}
+@media screen and (max-width: 768px){
+.hidden-back-input{
+    margin: 15px 0;
+}
+.search-card-icon{
+    rotate: 90deg;
+    margin: 7px 0;
+}
+.choos-back-date{
+    width: 100% !important;
+}
 }
 `
 export default TransportWrapper;
