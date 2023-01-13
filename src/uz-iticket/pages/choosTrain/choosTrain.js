@@ -22,14 +22,14 @@ const ChoosTrain = () => {
 
                         <div className='d-flex justify-content-between align-items-center py-3'>
                             <div>
-                                <span className='leave'>Jo'nash:</span><span className='leave-from'>Tashkent Jan</span> <br />
+                                <span className='leave'>Jo'nash: </span><span className='leave-from'>Tashkent Jan</span> <br />
                                 <span className='leave-time'>01:07</span> <span className='leave-date'>-19.01.2023</span>
                             </div>
                             <div>
                                 <h2>03:33</h2>
                             </div>
                             <div>
-                                <span className='leave'>Kelish:</span><span className='leave-from'>Qarshi</span> <br />
+                                <span className='leave'>Kelish: </span><span className='leave-from'>Qarshi</span> <br />
                                 <span className='leave-time'>01:07</span> <span className='leave-date'>-19.01.2023</span>
                             </div>
                         </div>

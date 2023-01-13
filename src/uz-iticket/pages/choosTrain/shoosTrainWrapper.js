@@ -16,6 +16,8 @@ font-size: 16px;
 .leave{
     color: #3b3b3b !important;
 }
+.place{
+}
 .leave-time{
     font-weight: bold;
     font-size: 18px;
@@ -25,6 +27,7 @@ font-size: 16px;
 }
 .leave-from{
     font-size: 20px;
+    font-weight: bold;
 }
 `
 export default ChoosTrainWrapper;
