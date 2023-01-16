@@ -112,7 +112,7 @@ const Home = () => {
                                 <p className='p_text'>Uz-ticket.uz orqali xizmatlardan foydalanish va chiptalarni xarid qilish xavfsizdir. Barcha ma'lumotlar, jumladan, passport va bank kartasi ma'lumotlari so'nggi xavfsizlik standartlariga muvofiq himoyalangan.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
-                                < FontAwesomeIcon icon={faArrowAltCircleDown} />
+                                < FontAwesomeIcon icon={faArrowAltCircleDown}  className="icon security"/>
                                 <h6>Onlayn qaytib oling</h6>
                                 <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
                             </div>

@@ -43,7 +43,7 @@ const TransportBus = () => {
                         </td>
                         <td><span className='fw-bold'>75000</span> so'm</td>
                         <td>
-                            <Link to={'/choos-train'}>
+                            <Link to={'/choos-train'} >
                                 <button className='btn btn-primary py-1'>Yo'nalishni <br /> tanlash</button>
                             </Link>
                         </td>
@@ -86,7 +86,7 @@ const TransportBus = () => {
                     <span>100</span>
                     <span>110000 so'm</span>
                 </div>
-                <Link to={'/choos-train'}><button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</button></Link>
+                <Link to={'/choos-train'} className="text-end"><button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</button></Link>
             </div>
             {/* FOR PHONE VERSION BUS END*/}
             {/* FOR BUS  END*/}

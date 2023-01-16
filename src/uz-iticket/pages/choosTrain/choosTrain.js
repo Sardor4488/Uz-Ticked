@@ -9,7 +9,7 @@ const ChoosTrain = () => {
             <section className='choos-train '>
                 <div className='container'>
                     <div class="card px-2 py-3 rounded-3 mb-3">
-                        <h4><span>BUXORO</span>dan <span>SAMARQAND</span>gacha chiptalarni xarid qiling va <span>SAMARQAND</span>dan <span>BUXORO</span>gacha</h4>
+                        <h5 className='direction-train-title'><span>BUXORO</span>dan <span>SAMARQAND</span>gacha chiptalarni xarid qiling va <span>SAMARQAND</span>dan <span>BUXORO</span>gacha</h5>
                     </div>
                     <div className='card rounded-3 p-3'>
                         <div className='from-leave-to py-3 px-2 rounded-2'>
@@ -26,7 +26,7 @@ const ChoosTrain = () => {
                                 <span className='leave-time'>01:07</span> <span className='leave-date'>-19.01.2023</span>
                             </div>
                             <div>
-                                <h2>03:33</h2>
+                                <h2 className='away-time'>03:33</h2>
                             </div>
                             <div>
                                 <span className='leave'>Kelish: </span><span className='leave-from'>Qarshi</span> <br />
@@ -34,7 +34,7 @@ const ChoosTrain = () => {
                             </div>
                         </div>
                         <div>
-                            <h4>Vagon va joyla soni:</h4>
+                            <h4 className='count-place-on-trains'>Vagon va joyla soni:</h4>
                         </div>
                     </div>
                 </div>

@@ -29,5 +29,27 @@ font-size: 16px;
     font-size: 20px;
     font-weight: bold;
 }
+@media screen and (max-width: 992px){
+    .direction-train-title, .count-place-on-trains{
+    font-size: 15px !important;
+}
+.from-leave-to{
+    font-size: 13px !important;
+    .train{
+    font-size: 13px !important;
+    }
+}
+.leave, .leave-date{
+    font-size: 13px;
+}
+.leave-from , .leave-time{
+    font-size: 15px !important;
+}
+.away-time{
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+}
 `
 export default ChoosTrainWrapper;

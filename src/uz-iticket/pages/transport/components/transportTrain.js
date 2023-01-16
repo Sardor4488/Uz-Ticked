@@ -96,7 +96,7 @@ const TransportTrain = () => {
                     <span>100</span>
                     <span>110000 so'm</span>
                 </div>
-                <Link to={'/choos-train'}><button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</button></Link>
+                <Link to={'/choos-train'} className="text-end"><button className='btn btn-primary py-1 mt-2'>Yo'nalishni tanlash</button></Link>
             </div>
             {/* FOR PHONE VERSION TRAIN END*/}
             {/* FOR RAILWAYS END*/}

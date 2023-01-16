@@ -21,7 +21,7 @@ const TransportWrapper = styled.div`
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
     padding: 0 0 0 5px;
-    font-size: 16px; 
+    font-size: 15px; 
     min-width: 70px !important;
 } 
 .cont-transports-search{
@@ -169,7 +169,7 @@ background-color: #4e95fe;
 border-radius: 5px;
 color: #fff !important;
 padding: 5px;
-font-size: 16px;
+font-size: 15px;
 }
 .title-transport span{
     font-size: 17px !important;
@@ -191,7 +191,7 @@ font-size: 16px;
 
 }
 .information-reys  {
-    font-size: 16px !important;
+    font-size: 15px !important;
 }
 .guliston-br{
         display: block !important;
@@ -223,6 +223,10 @@ font-size: 16px;
 .countrys{
         display: none !important;
     }
+
+    .train{
+    font-size: 13px !important;
+    } 
 }
 @media screen and (max-width: 768px){
 .hidden-back-input{

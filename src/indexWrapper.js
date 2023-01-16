@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const IndexWrapper = styled.div`
-*{font-family: 'Poppins', sans-serif;
+*{
+    font-family: 'Poppins', sans-serif;
 }
 ul{
     list-style: none;
