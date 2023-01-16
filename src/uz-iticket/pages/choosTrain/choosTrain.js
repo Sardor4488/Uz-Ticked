@@ -17,19 +17,19 @@ const ChoosTrain = () => {
                             <span className='mb-0 title-transport fw-bold'>067F <span className=''>(СКР)</span> </span>
                             <span className='place'>Tashkent Jan</span>
                             <FontAwesomeIcon className='mx-1 from-to' icon={faArrowRightLong} />
-                            <span className='place'>Qashqadaryo</span>
+                            <span className='place '>Qashqadaryo</span>
                         </div>
 
                         <div className='d-flex justify-content-between align-items-center py-3'>
                             <div>
-                                <span className='leave'>Jo'nash: </span><span className='leave-from'>Tashkent Jan</span> <br />
+                                <span className='leave'>Jo'nash: <br/></span><span className='leave-from'>Tashkent Jan</span> <br />
                                 <span className='leave-time'>01:07</span> <span className='leave-date'>-19.01.2023</span>
                             </div>
                             <div>
                                 <h2 className='away-time'>03:33</h2>
                             </div>
-                            <div>
-                                <span className='leave'>Kelish: </span><span className='leave-from'>Qarshi</span> <br />
+                            <div className='text-end'>
+                                <span className='leave '>Kelish: <br/></span><span className='leave-from'>Qarshi</span> <br />
                                 <span className='leave-time'>01:07</span> <span className='leave-date'>-19.01.2023</span>
                             </div>
                         </div>
