@@ -21,5 +21,23 @@ const TransportWrapper = styled.div`
     width: 100%;
     height: 200px;
 }
+.faTra{
+    font-size: 16px;
+}
+.activ{
+    width: 151px;
+    height: 48px;
+
+}
+.activ:active{
+    border-bottom: black;
+}
+.btns{
+    width: 455px;
+    height: 72px;
+}
+.context{
+    display: flex;
+}
 `
 export default TransportWrapper;
