@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import TransportWrapper from './transportWrapper';
 import { Box, Tab } from '@mui/material';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faBus, faCalendarAlt, faPlane, faRightLeft, faTrain, faTruckPlane, faX } from '@fortawesome/free-solid-svg-icons';
+import { faBus, faCalendarAlt, faPlane, faRightLeft, faTrain, faTruckPlane, faX } from '@fortawesome/free-solid-svg-icons';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import TransportTrain from './components/transportTrain';
@@ -34,15 +34,22 @@ const Transport = () => {
     setValue(newValue);
   };
 
-  // boolean back to away 
+  // boolean back to away _________________
   const [showdate, setShowdate] = useState(true)
   console.log(showdate);
   function showdata() {
     setShowdate(!showdate)
 
   }
-  // boolean back to away 
+  // boolean back to away __________________
 
+  // input value whence to ________________
+  const [whenceto, setWhenceto] = useState("")
+  console.log(whenceto);
+  
+  const inputRef = useRef(null);
+  // console.log(inputRef.current.value)
+  // input value whence to ________________
   // const [countTicket, setCountTicket] = useState(1)
 
   // const incrementTicket = () => {
@@ -70,12 +77,14 @@ const Transport = () => {
           <div className='search_card'>
             <div className="row">
               <div className="col-12 col-lg-6  ">
-
-
                 <div className="row my-2 pe-1 ">
-                  <div className="col-12 col-md-5 px-0 py-0"><input type="text" className='w-100' placeholder='Qayerdan' /></div>
+                  <div className="col-12 col-md-5 px-0 py-0">
+                    <input ref={inputRef} type="text" className='w-100' placeholder='Qayerdan'  value={whenceto} onChange={(e) => setWhenceto(e.target.value)} />
+                  </div>
                   <div className="col-12 col-md-2 px-0 py-0  d-flex align-items-center justify-content-center"><FontAwesomeIcon className='search-card-icon c-pointer' icon={faRightLeft} /></div>
-                  <div className="col-12 col-md-5 px-0 py-0"><input type="text" className='w-100' placeholder='Qayerga' /></div>
+                  <div className="col-12 col-md-5 px-0 py-0">
+                    <input type="text" className='w-100' placeholder='Qayerga' />
+                  </div>
                 </div>
               </div>
               <div className="col-12 col-lg-6  ">
@@ -92,20 +101,11 @@ const Transport = () => {
                   </div>
                   <div className="col-12 col-md-4 text-center  px-0 py-0">
                     <button className='btn btn-primary '>Chiptalarni qidirish</button>
-
                   </div>
                 </div>
               </div>
             </div>
             <div className='d-flex abab align-items-center'>
-              {/* <input type="text" placeholder='Qayerdan' />
-              <span className='search_card-icon c-pointer'><FontAwesomeIcon icon={faRightLeft} /></span>
-              <input type="text" className='search-card-input' placeholder='Qayerga' /> */}
-              {/* <input type="date" className='search-card-input c-pointer' placeholder='Qayerdan' />
-              <span onClick={showdata} className={`${showdate ? 'd-block' : 'd-none'}`}>Qaytish sanasi</span>
-              <input type="date" className={` ${showdate ? 'd-none' : 'd-block'} search_card-input c-pointer`} placeholder='Qayerdan' />
-              <span onClick={showdata} className={`${showdate ? 'd-none' : 'd-block ms-2'}`}> <FontAwesomeIcon icon={faX} /> yopish</span>
-              <button className='btn btn-primary ms-3'>Chiptalarni qidirish</button> */}
             </div>
             <div className='countrys m-auto'>
               <span>Toshkent</span>

@@ -103,5 +103,8 @@ h6{
     }
 }
 }
+.otzivi .text2 {
+    /* font-weight: 100; */
+}
 `
 export default HomeWrapper;
