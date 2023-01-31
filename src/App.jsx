@@ -8,6 +8,9 @@ import Travel from "./uz-iticket/pages/travel";
 import WorkTravel from "./uz-iticket/pages/work-travel";
 import { Route, Routes } from "react-router-dom";
 import ChoosTrain from "./uz-iticket/pages/choosTrain";
+import Singup from "./uz-iticket/pages/singup/singup";
+import Singin from "./uz-iticket/pages/singin/singin";
+import Acount from "./uz-iticket/pages/acount/acount";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path="/choos-train" element={<ChoosTrain />} />
         <Route path="/travel" element={<Travel />} />
         <Route path="/work-travel" element={<WorkTravel />} />
+        <Route path="/singup" element={<Singup />} />
+        <Route path="/singin" element={<Singin />} />
+        <Route path="/acount" element={<Acount />} />
       </Routes>
       <Footer />
     </>

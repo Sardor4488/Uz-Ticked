@@ -53,10 +53,10 @@ const Header = () => {
                     <Link to={"/"} className="px-1 px-3 links d-none-md ">
                         Ma'lumot
                     </Link>
-                    <Link to={"/"} className="px-1 links">
+                    <Link to={"/singin"} className="px-1 links">
                         Kirish
                     </Link>
-                    <Link to={"/"} className="px-1 links register-link">
+                    <Link to={"/singup"} className="px-1 links register-link">
                         Ro'yxatdan o'tish
                     </Link>
                     <Link to={"/"} className="px-1 links">
