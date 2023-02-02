@@ -1,5 +1,5 @@
 import { faCcMastercard, faCcVisa } from '@fortawesome/free-brands-svg-icons'
-import {  faBusinessTime, faCreditCard, faHotel,  faRocket,   faTreeCity, faTruckPlane, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { faArrowAltCircleDown, faBusinessTime, faCreditCard, faHotel, faRocket, faShieldAlt, faStar, faTreeCity, faTruckPlane, faUtensils } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // SWIPER
 import React from "react";
@@ -8,14 +8,10 @@ import security from './imgs/security.svg'
 import n1 from './imgs/n1.svg'
 import playMarket from './imgs/google-play-badge-retina.png'
 import { Link } from 'react-router-dom'
-import img1 from "./imgs/image_2022-10-12_16-39-32.png"
-import img2 from "./imgs/image_2022-10-12_16-39-45.png"
-import img3 from "./imgs/image_2022-10-12_16-39-58.png"
-import img4 from "./imgs/image_2022-10-12_16-40-47.png"
 import img5 from "./imgs/image_2022-10-12_16-41-06.png"
 import img6 from "./imgs/image_2022-10-12_16-41-30.png"
-
-
+import uzcardIcon from "./../../images/uzcard-icon.png"
+import homocardIcon from "./../../images/Humo-01.jpg"
 const Home = () => {
     return (
         <HomeWrapper>
@@ -31,14 +27,7 @@ const Home = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="  col-3 col-md-4 my-1  mini-sections mx-1 ">
-                            <Link className='text-white' to={'/transport'}>
-                                <div className='d-flex align-items-center justify-content-center flex-wrap'>
-                                    <FontAwesomeIcon className='h1' icon={faTreeCity} />
-                                    <span>Sayohat</span>
-                                </div>
-                            </Link>
-                        </div>
+
                         <div className="   col-3 col-md-4 my-1 mini-sections  mx-1">
                             <Link className='text-white' to={'/hotels'}>
                                 <div className='d-flex align-items-center justify-content-center flex-wrap'>
@@ -55,46 +44,40 @@ const Home = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="  col-3 col-md-4 my-1 mini-sections mx-1 ">
-                            <Link className='text-white' to={'/travel'}>
+                        <div className="  col-3 col-md-4 my-1  mini-sections mx-1 ">
+                            <Link className='text-white' to={'/transport'}>
                                 <div className='d-flex align-items-center justify-content-center flex-wrap'>
-                                    <FontAwesomeIcon className='h1' icon={faRocket} />
-                                    <span>Sarguzasht</span>
+                                    <FontAwesomeIcon className='h1' icon={faTreeCity} />
+                                    <span>Sayohat</span>
                                 </div>
                             </Link>
                         </div>
-                        <div className="  col-3 col-md-4 my-1 mini-sections mx-1 ">
-                            <Link className='text-white' to={'/work-travel'}>
-                                <div className='d-flex align-items-center justify-content-center flex-wrap'>
-                                    <FontAwesomeIcon className='h1' icon={faBusinessTime} />
-                                    <span>Ish Safari</span>
-                                </div>
-                            </Link>
-                        </div>
+
                     </div>
 
-                    <div class="row">
-                        <div class="text-start d-flex justify-content-start col-12 col-md-12 col-lg-4">
+                    <div className="row">
+                        <div className="text-start d-flex justify-content-start col-12 col-md-12 col-lg-4">
                             <div className='text-white  d-flex justify-content-center align-items-center'>
-                                <img src={security} className='me-2' alt="rasm topilmadi" />
+                                < FontAwesomeIcon icon={faShieldAlt} className="icon  me-2" />
                                 <div>
                                     <span className=' border-bottom'>Xavfsiz to'lov</span>
                                     <div>
-                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCreditCard} />
+                                        <img src={uzcardIcon} className="uzcard" alt="" />
+                                        <img src={homocardIcon} className="humo ms-1" alt="" />
                                         <FontAwesomeIcon className='fs-5 mx-1' icon={faCcVisa} />
-                                        <FontAwesomeIcon className='fs-5 mx-1' icon={faCcMastercard} />
+                                        <FontAwesomeIcon className='fs-5 ' icon={faCcMastercard} />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center text-white">
+                        <div className="col-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center text-white">
                             <img src={n1} alt="rasm topilmadi" />
                             <div>
-                                <span>UzTicked.uz — O'zbekistondagi yagona <br /> online transport platformasi</span>
+                                <span>Uz-ticket.uz - O'zbekistonning sayyohlik <br /> chiptalar xizmatlari № 1</span>
                             </div>
                         </div>
-                        <div class=" text-whitecol-12 col-md-12 col-lg-4 d-flex justify-content-end">
-                            <Link to={''} className='text-white'>
+                        <div className=" text-whitecol-12 col-md-12 col-lg-4 d-flex justify-content-end">
+                            <Link to={'#'} className='text-white'>
                                 <img className='playMarketImg' src={playMarket} alt="rasm topilmadi" />
                                 <br /> <span>UzTicket mobil ilovasi</span>
                             </Link><div>
@@ -114,39 +97,39 @@ const Home = () => {
                         <p> Ежедневно Туту.ру посещают 1 млн человек. Вот за что любят наш сервис:</p>
                         <div className='row pt-5'>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
-                                <img src={img1} alt="" />
-                                <h6>Проверенные перевозчики</h6>
-                                <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
+                                <FontAwesomeIcon icon={faStar} className="icon star" />
+                                <h6>Baholar reytingi</h6>
+                                <p className='p_text'>Xarid qilishdan oldin siz yo'lovchilar reytingi asosida tashuvchi transport reytingini ko'rishingiz, batafsil sharhlarni o'qishingiz va shu orqali eng yaxshi reysni tanlashingiz mumkin.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
-                                <img src={img2} alt="" />
-                                <h6>Проверенные перевозчики</h6>
-                                <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
+                                <FontAwesomeIcon icon={faCreditCard} className="icon credit-card" />
+                                <h6>Tez va onlayn xarid</h6>
+                                <p className='p_text'>Barcha turdagi xizmatlarni osongina buyurtma berish va bank kartalari orqali onlayn to'lash imkonini beradi.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
-                                <img src={img3} alt="" />
-                                <h6>Проверенные перевозчики</h6>
-                                <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
+                                < FontAwesomeIcon icon={faShieldAlt} className="icon security" />
+                                <h6>Xavfsiz to'lov</h6>
+                                <p className='p_text'>Uz-ticket.uz orqali xizmatlardan foydalanish va chiptalarni xarid qilish xavfsizdir. Barcha ma'lumotlar, jumladan, passport va bank kartasi ma'lumotlari so'nggi xavfsizlik standartlariga muvofiq himoyalangan.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
-                                <img src={img4} alt="" />
-                                <h6>Проверенные перевозчики</h6>
+                                < FontAwesomeIcon icon={faArrowAltCircleDown}  className="icon security"/>
+                                <h6>Onlayn qaytib oling</h6>
                                 <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
                                 <img src={img5} alt="" />
-                                <h6>Проверенные перевозчики</h6>
-                                <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
+                                <h6>24/7 qo'llab-quvvatlash</h6>
+                                <p className='p_text'>24 soatlik aloqa markazi xariddan oldin va keyin bepul maslahalar beradi. Qo'llab quvattalash markazi orqali xizmatlarni aloqa vaqtida shaxsingizni tasdiqlash orqali xodimlar tomonidan xizmat va chiptalarni onlayn band qilish imkonini beradi.</p>
                             </div>
                             <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
                                 <img src={img6} alt="" />
-                                <h6>Проверенные перевозчики</h6>
-                                <p className='p_text'>Перед покупкой можно посмотреть рейтинг перевозчика на основе оценок пассажиров, прочитать подробные отзывы и таким образом выбрать лучший рейс.</p>
+                                <h6>Mobil ilovalar</h6>
+                                <p className='p_text'>Telfoningizdan Uz-ticket.uz xizmatlaridan foydalanish juda qulay. Ilovalarimizni yuklab oling. APP Store yoki Google play.</p>
                             </div>
                         </div>
                     </div>
-                    <div className='ul_list'>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                    <div className='ul_list row'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Aviabiletlar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -162,7 +145,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Poyezdlar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -178,7 +161,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Avtobuslar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -194,7 +177,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Elektrik-poyezd</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -210,7 +193,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Turlar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>
@@ -226,7 +209,7 @@ const Home = () => {
                                 <li><Link><p className='links_1'>Самолеты</p></Link></li>
                             </ul>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-4 col-lg-2'>
+                        <div className='col-6 col-sm-6 col-md-4 col-lg-2'>
                             <h6>Mehmonhonalar</h6>
                             <ul>
                                 <li><p className='text_little'>Популярные направления</p></li>

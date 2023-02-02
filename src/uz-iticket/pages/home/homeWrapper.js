@@ -53,8 +53,7 @@ background-color:rgba(0, 0, 0, 0.603) !important;
     font-family: Helvetica,arial,sans-serif;
 }
 .ul_list{
-    margin-top: 40px;
-    display: flex;
+    margin-top: 40px; 
     margin-bottom: 100px;
 }
 .text_little{
