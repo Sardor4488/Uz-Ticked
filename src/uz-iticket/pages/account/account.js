@@ -31,7 +31,7 @@ const Account = () => {
                                 <div className="login-form">
                                     <div className="title">Kirish</div>
                                     <form action="#">
-                                        <div classNAme="input-boxes">
+                                        <div className="input-boxes">
                                             <div className="input-box">
                                                 <i className="fas fa-envelope"></i>
                                                 <input type="text" placeholder="Emailingizni kiriting" required />
