@@ -53,11 +53,11 @@ const Header = () => {
                     <Link to={"/"} className="px-1 px-3 links d-none-md ">
                         Ma'lumot
                     </Link>
-                    <Link to={"/"} className="px-1 links">
+                    {/* <Link to={"/account"} className="px-1 links">
                         Kirish
-                    </Link>
-                    <Link to={"/"} className="px-1 links register-link">
-                        Ro'yxatdan o'tish
+                    </Link> */}
+                    <Link to={"/account"} className="px-1 links register-link">
+                        Kirish / Ro'yxatdan o'tish
                     </Link>
                     <Link to={"/"} className="px-1 links">
                         <FontAwesomeIcon icon={faRightToBracket} />
@@ -135,7 +135,7 @@ const Header = () => {
                             id="floatingSelectGrid"
                         >
                             <option value="uz"> O'zbek tili</option>
-                            <option value="ru"> русский язык</option>
+                            <option value="ru"> Русский язык</option>
                             <option value="en"> English language</option>
                         </select>
                     </li>

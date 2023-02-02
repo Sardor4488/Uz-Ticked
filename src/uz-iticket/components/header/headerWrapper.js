@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
 header{
-    background-color: transparent ;
+    background-color: #f0f4f8;
     /* position: fixed; */
     z-index:3;
     width: 100%;

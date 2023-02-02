@@ -8,6 +8,7 @@ import Travel from "./uz-iticket/pages/travel";
 import WorkTravel from "./uz-iticket/pages/work-travel";
 import { Route, Routes } from "react-router-dom";
 import ChoosTrain from "./uz-iticket/pages/choosTrain";
+import Account from "./uz-iticket/pages/account";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/choos-train" element={<ChoosTrain />} />
         <Route path="/travel" element={<Travel />} />
         <Route path="/work-travel" element={<WorkTravel />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
       <Footer />
     </>
